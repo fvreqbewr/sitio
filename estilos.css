@@ -1,0 +1,143 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 0 20px;
+}
+
+/* Estilo de la barra de navegación */
+.navbar {
+    background-color: #333;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    
+    align-items: center;
+    text-align: center;
+    
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ff6347;
+    font-weight: bold;
+}
+
+/* Estilo de la barra de búsqueda */
+.search-container {
+    margin: 100px auto;
+    text-align: center;
+}
+
+.search-container input {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+/* Grid y flexbox para organizar las recetas */
+.recipes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 50px;
+    padding-top: 50px;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card img {
+    width: 80%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.recipe-card h3 {
+    padding: 15px;
+    font-size: 20px;
+    background-color: #ff6347;
+    color: #fff;
+}
+
+.recipe-card p {
+    padding: 0 15px 15px;
+    color: #666;
+}
+
+/* Estilo de las secciones */
+section {
+    padding: 80px 0;
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+.recipe-card p {
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.recipe-details h4 {
+    font-size: 18px;
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+.recipe-details ul, .recipe-details ol {
+    margin-left: 20px;
+}
+
+.recipe-details li {
+    margin-bottom: 8px;
+}
+
